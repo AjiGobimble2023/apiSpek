@@ -1172,29 +1172,32 @@ Response :
 
 ```json 
 {
-    "data": [
-        {
-            "kode_tob": "string, unique",
-            "id_kelompok_ujian": "string, unique",
-            "id_jenis_produk": "string, unique",
-            "id_sekolah_kelas": "string, unique",
-            "kode_paket": "string, unique",
-            "deskripsi": "string",
-            "nomor_urut": "number",
-            "isBlockingTime": "boolean",
-            "tanggal_berlaku": "date",
-            "tanggal_kadaluwarsa": "date",
-            "total_waktu": "time",
-            "total_soal": "number",
-            "jenis": "string",
-            "isSelesai": "boolean",
-            "isPernahMengerjakan": "boolean",
-            "tanggal_mulai": "date",
-            "tanggal_deadline": "date",
-            "tanggal_pengumpulan": "date",
-            "merk": "Unknown",
-            "waktu_habis": "boolean"
-        }
+      "data": [
+            {
+                "kodeTOB": "18526", //String
+                "idKelompokUjian": "36", //String
+                "idJenisProduk": "80", //String
+                "idSekolahKelas": "41", //String
+                "kodePaket": "RAC-002051", //String
+                "c_Deskripsi": "RACING-12SMA-K.MERDEKA-02 SEPTEMBER 2023", //String
+                "nomorUrut": "1", //String
+                "isBlockingTime": "1", //String
+                "tanggalBerlaku": "2023-09-02 10:00:00", //String
+                "tanggalKedaluwarsa": "2023-09-02 23:59:00", //String
+                "totalWaktu": "61", //String
+                "jumlahSoal": "40", //String
+                "jenis": "reguler", //String
+                "isSelesai": "n", //String || bool
+                "isPernahMengerjakan": "n", //String || bool
+                "tanggalMulai": "-", //String || date
+                "tanggalDeadline": "-", //String || date
+                "tanggalMengumpulkan": "-", //String || date
+                "merk": "Unknown", //String
+                "waktuHabis": "n", //String || bool
+                "initial":"mkt", //String
+                "iconMapel":"https://dltvxpypx9f25.cloudfront.net/mapel/mapel_akm.webp", //String
+                "namaKelompokUjian":"MATEMATIKA SAINTEK" //String
+            }, //semua list goa 
     ],
 
     "meta" : {
@@ -1217,21 +1220,21 @@ Response :
 
 ```json 
 {
-    "data": [
-        {
-            "kode_tob": "string, unique",
-            "kode_paket": "string, unique",
-            "deskripsi": "string",
-            "isLulus": "boolean",
-            "id_jenis_produk": "string, unique",
-            "IsBlockingTime": "boolean",
-            "id_sekolah_kelas": "41",
-            "tanggal_berlaku": "date",
-            "tanggal_kedaluwarsa": "date",
-            "total_waktu": "time",
-            "total_soal": "number",
-            "jenis": "string"
-        }
+     "data": [
+            {
+                "c_KodeTOB": "18240", // String
+                "c_KodePaket": "EMMA-005000", // String
+                "c_Deskripsi": "EMMA-12SMA-K.Merdeka-S1-MAT UMUM-PER 04-10 SEPT 23", // String
+                "isLulus": null, // bool
+                "idJenisProduk": "71", // String || int
+                "c_IsBlockingTime": "0", // String || bool
+                "idSekolahKelas": "41", // String || int
+                "tanggalBerlaku": "2023-09-04 00:00:00", // String || date
+                "tanggalKedaluwarsa": "2023-09-19 23:59:00",// String || date
+                "totalWaktu": "50", // String || int
+                "jumlahSoal": "10", // String || int
+                "jenis": "reguler" // String || enum
+            },
     ],
 
     "meta" : {
@@ -1254,32 +1257,27 @@ Response :
 
 ```json 
 {
-    "data" : {
-        {
-            "id_soal": "string, unique",
-            "soal": "string",
-            "opsi": [
-                {
-                    "pilihan": "string, unique", // cnth:  A, B, C, D
-                    "text": "string",
-                    "isJawaban": "boolean",
-                }
-            ],
-            "id_wacana": "string, unique",
-            "id_tipe_soal": "string, unique",
-            "tipe_soal": "string",
-            "tingkat_kesulitan": "number",
-            "wacana": "string",
-            "nama_kelompok_ujian": "string",
-            "kode_paket": "string, unique",
-            "id_bundel": "string, unique",
-            "id_kelompok_ujian": "string, unique",
-            "id_video": "string, unique",
-            "nomor_soal": "number"
-        },
-        "waktu": "time",
+    "data": {
+        "data_detail":[
+            {
+                "c_idsoal": "335213", //String
+                "c_soal": "<p class=&quotes;so&quotes;><span lang=&quotes;EN-US&quotes;>Sebuah industri rumah tangga yang baru beroperasi tahun 2012 membeli mesin produksi seharga Rp100.000.000,-. Dengan berjalannya proses produksi, maka harga mesin menurun 1% setiap tahun. Harga mesin pada tahun 2014 adalah</span></p>",  //String
+                "c_opsi": "{\"opsi\": {\"A\": {\"text\": \"<p>Rp98.000.000,-</p>\", \"bobot\": 0}, \"B\": {\"text\": \"<p>Rp98.010.000,-</p>\", \"bobot\": 100}, \"C\": {\"text\": \"<p class=&quotes;2&quotes;><span lang=&quotes;EN-US&quotes;>Rp98.020.000,-</span></p>\", \"bobot\": 0}, \"D\": {\"text\": \"<p class=&quotes;2&quotes;><span lang=&quotes;EN-US&quotes;>Rp98.030.000,-</span></p>\", \"bobot\": 0}, \"E\": {\"text\": \"<p class=&quotes;2&quotes;><span lang=&quotes;EN-US&quotes;>Rp98.050.000,-</span></p>\", \"bobot\": 0}}, \"nilai\": {\"fullcredit\": 1, \"halfcredit\": -1, \"zerocredit\": 0}}", //object
+                "c_idwacana": "0", //String
+                "c_tipesoal": "PGB", //String || enum 
+                "c_tingkatkesulitan": "3", //String || int
+                "c_nomorsoal": "1", //String || int
+                "wacana": "", //String
+                "c_namakelompokujian": "MATEMATIKA UMUM", //String
+                "c_kodepaket": "RAC-002051", //String
+                "c_idbundel": "24606", //String
+                "c_idkelompokujian": "111", //String
+                "c_idvideo": "0", //String
+                "c_NomorSoal": "1" //String
+            },
+    ],
+    "waktu": "100", //String
     },
-
     "meta" : {
         "code" : "number",
         "message" : "string", 
@@ -1301,31 +1299,52 @@ Response :
 ```json 
 {
     "data": {
-        "waktu": "time",
+        "waktu": "180", //string
         "data_detail": [
-            {
-                "wacana": "",
-                "id_soal": "string, unique",
-                "nomor_soal": "1",
-                "id_wacana": "string, unique",
-                "id_bundel": "string, unique",
-                "id_kelompok_ujian": "string, unique",
-                "nama_kelompok_ujian": "string",
-                "id_video": "string, unique",
-                "soal": "string",
-                "opsi": [
-                    {
-                        "pilihan": "string, unique", // cnth:  A, B, C, D
-                        "text": "string",
-                        "isJawaban": "boolean",
-                    }
-                ],
-                "tipe_soal": "enum || string",
-                "tingkat_kesulitan": "number",
-                "kode_paket": "EMWA-754" //cnth: EMWA-754
+            {  "wacana": "", //String
+                "c_IdSoal": "320407", //String
+                "c_NomorSoal": "1", //String
+                "c_IdWacana": "0", //String
+                "c_IdBundel": "23780", //String
+                "c_IdKelompokUjian": "124", //String
+                "c_IdVideo": "9829", //String
+                "c_Soal": "<p>Mahasiswa baru mencari perguruan tinggi swasta sebagai alternatif perguruan tinggi negeri. Jika kualitas dosen baik dan fasilitas perguruan tinggi swasta memadai, perguruan tinggi swasta tersebut baik. Mahasiswa baru akan memilih perguruan tinggi swasta dengan biaya murah.</p><p><img src=&quotes;{{root_media}}7689ae0111c790acc1b28b7f8287297f.png&quotes;></p><p>Ada berapa argumen yang memperlemah?</p>", //String
+                "c_Opsi": "{\"opsi\": {\"A\": {\"text\": \"<p>Tidak ada.</p>\", \"bobot\": 0}, \"B\": {\"text\": \"<p>Satu pernyataan.</p>\", \"bobot\": 100}, \"C\": {\"text\": \"<p>Dua pernyataan.</p>\", \"bobot\": 0}, \"D\": {\"text\": \"<p>Tiga pernyataan.</p>\", \"bobot\": 0}, \"E\": {\"text\": \"<p>Empat pernyataan.</p>\", \"bobot\": 0}}, \"nilai\": {\"fullcredit\": 1, \"halfcredit\": -1, \"zerocredit\": 0}}", //Object
+                "c_TipeSoal": "PGB", //String || enum
+                "c_TingkatKesulitan": "4", //String
+                "c_NamaKelompokUjian": "KEMAMPUAN PENALARAN UMUM", //String
+                "c_KodePaket": "EMWA-754" //String
             }
         ]
     },
+
+    "meta" : {
+        "code" : "number",
+        "message" : "string", 
+        "status" : "string",
+    }
+}
+```
+### Hasil Pengerjaan VAK
+
+Request :
+- Method : GET
+- Endpoint : `/mobile/v1/hasil/vak/{kodepaket}`
+- Header :
+    - Accept: application/json
+    - Authorization : "Bearer " + Token
+Response :
+
+```json 
+{
+    "data": [
+           {
+                "benar": 1, //int
+                "salah": 1, //int
+                "kosong": 0, //int
+                "namaKelompokUjian": "Kemampuan Memahami Bacaan dan Menulis" //String
+            },
+    ],
 
     "meta" : {
         "code" : "number",
@@ -1352,27 +1371,30 @@ Response :
 {
     "data": [
         {
-            "kode_tob": "string, unique",
-            "id_kelompok_ujian": "string, unique",
-            "id_jenis_produk": "string, unique",
-            "id_sekolah_kelas": "string, unique",
-            "kode_paket": "string, unique",
-            "deskripsi": "string",
-            "nomor_urut": "number",
-            "isBlockingTime": "boolean",
-            "tanggal_berlaku": "date",
-            "tanggal_kadaluwarsa": "date",
-            "total_waktu": "time",
-            "total_soal": "number",
-            "jenis": "string",
-            "isSelesai": "boolean",
-            "isPernahMengerjakan": "boolean",
-            "tanggal_mulai": "date",
-            "tanggal_deadline": "date",
-            "tanggal_pengumpulan": "date",
-            "merk": "Unknown",
-            "waktu_habis": "boolean"
-        }
+                "kodeTOB": "18526", //String
+                "idKelompokUjian": "36", //String
+                "idJenisProduk": "80", //String
+                "idSekolahKelas": "41", //String
+                "kodePaket": "RAC-002051", //String
+                "c_Deskripsi": "RACING-12SMA-K.MERDEKA-02 SEPTEMBER 2023", //String
+                "nomorUrut": "1", //String
+                "isBlockingTime": "1", //String || bool
+                "tanggalBerlaku": "2023-09-02 10:00:00", //String || date
+                "tanggalKedaluwarsa": "2023-09-02 23:59:00", //String || date
+                "totalWaktu": "61", //String
+                "jumlahSoal": "40", //String
+                "jenis": "reguler", //String || enum
+                "isSelesai": "n", //String || bool
+                "isPernahMengerjakan": "n", //String || bool
+                "tanggalMulai": "-",//String || date
+                "tanggalDeadline": "-", //String || date
+                "tanggalMengumpulkan": "-", //String || date
+                "merk": "Unknown", //String
+                "waktuHabis": "n", //String || bool
+                "initial":"mkt", //String
+                "iconMapel":"https://dltvxpypx9f25.cloudfront.net/mapel/mapel_akm.webp", //String
+                "namaKelompokUjian":"MATEMATIKA SAINTEK" //String
+            },
     ],
 
     "meta" : {
@@ -1396,29 +1418,26 @@ Response :
 ```json 
 {
     "data" : {
-        {
-            "id_soal": "string, unique",
-            "soal": "string",
-            "opsi": [
-                {
-                    "pilihan": "string, unique", // cnth:  A, B, C, D
-                    "text": "string",
-                    "isJawaban": "boolean",
-                }
-            ],
-            "id_wacana": "string, unique",
-            "id_tipe_soal": "string, unique",
-            "tipe_soal": "string",
-            "tingkat_kesulitan": "number",
-            "wacana": "string",
-            "nama_kelompok_ujian": "string",
-            "kode_paket": "string, unique",
-            "id_bundel": "string, unique",
-            "id_kelompok_ujian": "string, unique",
-            "id_video": "string, unique",
-            "nomor_soal": "number"
-        },
-        "waktu": "time",
+        "waktu": "60",//String
+        "detail_soal":[
+            {
+                "c_idsoal": "335216", //String
+                "c_soal": "<p class=&quotes;so&quotes;><span lang=&quotes;EN-US&quotes;>Suatu bahan radioaktif yang semula berukuran 100 gram mengalami reaksi kimia sehingga ukurannya menyusut 10% dari ukuran sebelum nya setiap 12 jam. Ukuran bahan radioaktif tersebut setelah 2 hari adalah</span></p>", //String || HTML
+                "c_opsi": "{\"opsi\": {\"A\": {\"text\": \"<p>56,16 gram.</p>\", \"bobot\": 0}, \"B\": {\"text\": \"<p>56,61 gram.</p>\", \"bobot\": 0}, \"C\": {\"text\": \"<p class=&quotes;2&quotes;><span lang=&quotes;EN-US&quotes;>61,65 gram.</span></p>\", \"bobot\": 0}, \"D\": {\"text\": \"<p>65,16 gram.</p>\", \"bobot\": 0}, \"E\": {\"text\": \"<p class=&quotes;2&quotes;><span lang=&quotes;EN-US&quotes;>65,61 gram.</span></p>\", \"bobot\": 100}}, \"nilai\": {\"fullcredit\": 1, \"halfcredit\": -1, \"zerocredit\": 0}}", //object
+                "c_idwacana": "0", //String
+                "c_tipesoal": "PGB", //String || enum
+                "c_tingkatkesulitan": "4", //String
+                "c_nomorsoal": "6", //String
+                "wacana": "", //String
+                "c_namakelompokujian": "MATEMATIKA UMUM", //String
+                "c_kodepaket": "RAC-002051", //String
+                "c_idbundel": "24606", //String
+                "c_idkelompokujian": "111", //String
+                "c_idvideo": "0", //String
+                "c_NomorSoal": "6" //String
+            }, 
+        ]
+        
     },
 
     "meta" : {
@@ -1446,16 +1465,16 @@ Response :
 {
     "data" : [
         {
-            "kode_tob": "string, unique",
-            "nama_tob": "string",
-            "jenis_tob": "string || enum",
-            "tanggal_mulai": "date",
-            "tanggal_selesai": "date",
-            "jarak_antar_paket": "number",
-            "isKurikulumMerdeka": "boolean",
-            "isBersyarat": "boolean",
-            "jenis": "string",
-        }
+                "c_KodeTOB": "17053", //String
+                "c_NamaTOB": "TOBK SEPTEMBER 12 IPA K13R", //String
+                "jenisTOB": "UTBK", //String || enum
+                "tanggalMulai": "2023-09-04 00:00:00", //String || date
+                "tanggalBerakhir": "2023-09-19 23:59:00", //String || date
+                "jarakAntarPaket": "5", //String
+                "isTOMerdeka": "0", //String || bool
+                "isBersyarat": "1", //String || bool
+                "jenis": "reguler" //String || enum
+            },
     ],
 
     "meta" : {
@@ -1480,30 +1499,32 @@ Response :
 {
     "data" : [
         {
-            "kode_tob": "string, unique",
-            "id_kelompok_ujian": "string, unique",
-            "id_jenis_produk": "string, unique",
-            "id_sekolah_kelas": "string, unique",
-            "kode_paket": "string, unique",
-            "deskripsi": "string",
-            "nomor_urut": "number",
-            "isBlockingTime": "boolean",
-            "totalWaktu": "time",
-            "total_soal": "number",
-            "isRandom": "boolean",
-            "isSelesai": "boolean",
-            "isPernahMengerjakan": "boolean",
-            "isOK": "boolean",
-            "tanggal_mulai": "date",
-            "tanggal_deadline": "date",
-            "tanggal_pengumpulan": "date",
-            "merk": "Unknown",
-            "keterangan": null,
-            "pilihan_siswa": null,
-            "flag": null,
-            "waktu_habis": "boolean",
-            "isWajib": "boolean"
-        }
+                "kodeTOB": "13680", //String
+                "idKelompokUjian": "131", //String
+                "idJenisProduk": "25", //String
+                "idSekolahKelas": "14", //String
+                "kodePaket": "TO-844", //String
+                "kode_paket": "TO-844", //String
+                "c_Deskripsi": "TOBK UM UGM KE-1 TA 22/23_TPA", //String
+                "nomorUrut": "1", //String
+                "isBlockingTime": "0", //String
+                "totalWaktu": "60", //String
+                "jumlahSoal": "60",//String
+                "isRandom": "0", //String
+                "isSelesai": "n", //String
+                "isPernahMengerjakan": "n", //String
+                "isOK": "n", //String
+                "tanggalMulai": "-", //String
+                "tanggalDeadline": "-", //String
+                "tanggalMengumpulkan": "-", //String
+                "merk": "Unknown", //String
+                "cKeterangan": null, //String
+                "cPilihanSiswa": null, //String
+                "cFlag": null, //String
+                "waktuHabis": "n", //String
+                "isWajib": "1", //String
+                "iconMapel":"https://dltvxpypx9f25.cloudfront.net/mapel/tps_pemahaman_membaca_dan_menulis.webp" //String
+            },
     ],
 
     "meta" : {
@@ -1528,29 +1549,25 @@ Response :
 ```json 
 {
     "data" : {
-        {
-            "id_soal": "string, unique",
-            "soal": "string",
-            "opsi": [
-                {
-                    "pilihan": "string, unique", // cnth:  A, B, C, D
-                    "text": "string",
-                    "isJawaban": "boolean",
-                }
-            ],
-            "id_wacana": "string, unique",
-            "id_tipe_soal": "string, unique",
-            "tipe_soal": "string",
-            "tingkat_kesulitan": "number",
-            "wacana": "string",
-            "nama_kelompok_ujian": "string",
-            "kode_paket": "string, unique",
-            "id_bundel": "string, unique",
-            "id_kelompok_ujian": "string, unique",
-            "id_video": "string, unique",
-            "nomor_soal": "number"
-        },
-        "waktu": "time",
+       "waktu": "60",//String
+        "detail_soal":[
+            {
+                "c_idsoal": "335216", //String
+                "c_soal": "<p class=&quotes;so&quotes;><span lang=&quotes;EN-US&quotes;>Suatu bahan radioaktif yang semula berukuran 100 gram mengalami reaksi kimia sehingga ukurannya menyusut 10% dari ukuran sebelum nya setiap 12 jam. Ukuran bahan radioaktif tersebut setelah 2 hari adalah</span></p>", //String || HTML
+                "c_opsi": "{\"opsi\": {\"A\": {\"text\": \"<p>56,16 gram.</p>\", \"bobot\": 0}, \"B\": {\"text\": \"<p>56,61 gram.</p>\", \"bobot\": 0}, \"C\": {\"text\": \"<p class=&quotes;2&quotes;><span lang=&quotes;EN-US&quotes;>61,65 gram.</span></p>\", \"bobot\": 0}, \"D\": {\"text\": \"<p>65,16 gram.</p>\", \"bobot\": 0}, \"E\": {\"text\": \"<p class=&quotes;2&quotes;><span lang=&quotes;EN-US&quotes;>65,61 gram.</span></p>\", \"bobot\": 100}}, \"nilai\": {\"fullcredit\": 1, \"halfcredit\": -1, \"zerocredit\": 0}}", //object
+                "c_idwacana": "0", //String
+                "c_tipesoal": "PGB", //String || enum
+                "c_tingkatkesulitan": "4", //String
+                "c_nomorsoal": "6", //String
+                "wacana": "", //String
+                "c_namakelompokujian": "MATEMATIKA UMUM", //String
+                "c_kodepaket": "RAC-002051", //String
+                "c_idbundel": "24606", //String
+                "c_idkelompokujian": "111", //String
+                "c_idvideo": "0", //String
+                "c_NomorSoal": "6" //String
+            }, 
+        ],
     },
 
     "meta" : {
@@ -1575,18 +1592,18 @@ Response :
 ```json 
 {
     "data" : [
-        {
-           "kelompok_ujian": "string",
-           "info": [
-                {
-                    "nama_bab": "string",
-                    "kode_bab": "string",
-                    "level_teori": "string || enum",
-                    "id_mapel": "string",
-                    "inisial_mapel": "string"
-                },
-           ]
-        }
+         {
+                "kelompokUjian": "TPS - PENGETAHUAN DAN PEMAHAMAN UMUM", //String
+                "info": [
+                    {
+                        "namaBab": "Afiksasi", //String
+                        "kodeBab": "06.03.01", //String
+                        "levelTeori": "SMA", //String
+                        "idMapel": "6", //String
+                        "initialMapel": "IND" //String
+                    }
+                ]
+            },
     ],
 
     "meta" : {
@@ -1611,20 +1628,20 @@ Response :
 ```json 
 {
     "data": {
-            "isLulus": "boolean",
-            "isSelesai": "boolean",
-            "total_soal": "number",
-            "total_benar": "number",
-            "total_salah": "number",
-            "total_kosong": "number",
+             "isLulus": true, //bool
+            "sudahMengerjakan": false, //bool
+            "jumlahBenar": 1, //int
+            "jumlahSalah": 8, //int
+            "jumlahKosong": 47, //int
+            "jumlahSoal": 56, //int
             "listEmpati": [
                 {
-                    "kode_tob": "string, unique",
-                    "kode_paket": "string, unique",
-                    "total_soal": "number",
-                    "total_benar": "number",
-                    "total_salah": "number",
-                    "isBoleh": "boolean",
+                    "c_KodeTOB": "16773", //String
+                    "c_KodePaket": "EMWA-613", //String
+                    "c_JumlahSoal": 4, //int
+                    "c_JumlahBenar": 0, //int
+                    "c_JumlahSalah": 0, //int
+                    "c_IsBoleh": false //bool
                 },
             ]
     },
@@ -1651,17 +1668,17 @@ Response :
 ```json 
 {
     "data" : [
-        {
-            "kode_tob": "string, unique",
-            "nama_tob": "string",
-            "jenis_tob": "string || enum",
-            "tanggal_mulai": "date",
-            "tanggal_selesai": "date",
-            "jarak_antar_paket": "number",
-            "isKurikulumMerdeka": "boolean",
-            "isBersyarat": "boolean",
-            "jenis": "string",
-        }
+         {
+                "c_KodeTOB": "15737", //String
+                "c_NamaTOB": "TOBK UJI COBA TIM BTI 12 IPA", //String
+                "jenisTOB": "UTBK", //String
+                "tanggalMulai": "2023-07-25 15:22:35", //String
+                "tanggalBerakhir": "2023-08-30 23:59:00", //String
+                "jarakAntarPaket": "1", //String
+                "isTOMerdeka": "0", //String
+                "isBersyarat": "1", //String
+                "jenis": "reguler" //String
+            }
     ],
 
     "meta" : {
@@ -1689,19 +1706,19 @@ Response :
 {
     "data": [
         {
-            "kode_tob": "string, unique",
-            "kode_paket": "string, unique",
-            "deskripsi": "string",
-            "isLulus": "boolean",
-            "id_jenis_produk": "string, unique",
-            "IsBlockingTime": "boolean",
-            "id_sekolah_kelas": "41",
-            "tanggal_berlaku": "date",
-            "tanggal_kedaluwarsa": "date",
-            "total_waktu": "time",
-            "total_soal": "number",
-            "jenis": "string"
-        }
+                "c_KodeTOB": "18240", // String
+                "c_KodePaket": "EMMA-005000", // String
+                "c_Deskripsi": "EMMA-12SMA-K.Merdeka-S1-MAT UMUM-PER 04-10 SEPT 23", // String
+                "isLulus": null, // bool
+                "idJenisProduk": "71", // String || int
+                "c_IsBlockingTime": "0", // String || bool
+                "idSekolahKelas": "41", // String || int
+                "tanggalBerlaku": "2023-09-04 00:00:00", // String || date
+                "tanggalKedaluwarsa": "2023-09-19 23:59:00",// String || date
+                "totalWaktu": "50", // String || int
+                "jumlahSoal": "10", // String || int
+                "jenis": "reguler" // String || enum
+            },
     ],
 
     "meta" : {
@@ -1716,7 +1733,46 @@ Response :
 
 Request :
 - Method : GET
-- Endpoint : `/mobile/v1/buku-sakti/list/emma`
+- Endpoint : `/mobile/v1/buku-sakti/list/emma/{kodePaket}`
+- Header :
+    - Accept: application/json
+    - Authorization : "Bearer " + Token
+Response :
+
+```json 
+{
+    "data": {
+        "waktu": "180", //string
+        "data_detail": [
+            {  "wacana": "", //String
+                "c_IdSoal": "320407", //String
+                "c_NomorSoal": "1", //String
+                "c_IdWacana": "0", //String
+                "c_IdBundel": "23780", //String
+                "c_IdKelompokUjian": "124", //String
+                "c_IdVideo": "9829", //String
+                "c_Soal": "<p>Mahasiswa baru mencari perguruan tinggi swasta sebagai alternatif perguruan tinggi negeri. Jika kualitas dosen baik dan fasilitas perguruan tinggi swasta memadai, perguruan tinggi swasta tersebut baik. Mahasiswa baru akan memilih perguruan tinggi swasta dengan biaya murah.</p><p><img src=&quotes;{{root_media}}7689ae0111c790acc1b28b7f8287297f.png&quotes;></p><p>Ada berapa argumen yang memperlemah?</p>", //String
+                "c_Opsi": "{\"opsi\": {\"A\": {\"text\": \"<p>Tidak ada.</p>\", \"bobot\": 0}, \"B\": {\"text\": \"<p>Satu pernyataan.</p>\", \"bobot\": 100}, \"C\": {\"text\": \"<p>Dua pernyataan.</p>\", \"bobot\": 0}, \"D\": {\"text\": \"<p>Tiga pernyataan.</p>\", \"bobot\": 0}, \"E\": {\"text\": \"<p>Empat pernyataan.</p>\", \"bobot\": 0}}, \"nilai\": {\"fullcredit\": 1, \"halfcredit\": -1, \"zerocredit\": 0}}", //Object
+                "c_TipeSoal": "PGB", //String || enum
+                "c_TingkatKesulitan": "4", //String
+                "c_NamaKelompokUjian": "KEMAMPUAN PENALARAN UMUM", //String
+                "c_KodePaket": "EMWA-754" //String
+            }
+        ]
+    },
+
+    "meta" : {
+        "code" : "number",
+        "message" : "string", 
+        "status" : "string",
+    }
+}
+```
+### Hasil Pengerjaan EMMA
+
+Request :
+- Method : GET
+- Endpoint : `/mobile/v1/hasil/EMMA/{kodepaket}`
 - Header :
     - Accept: application/json
     - Authorization : "Bearer " + Token
@@ -1725,20 +1781,12 @@ Response :
 ```json 
 {
     "data": [
-        {
-            "kode_tob": "string, unique",
-            "kode_paket": "string, unique",
-            "deskripsi": "string",
-            "isLulus": "boolean",
-            "id_jenis_produk": "string, unique",
-            "IsBlockingTime": "boolean",
-            "id_sekolah_kelas": "41",
-            "tanggal_berlaku": "date",
-            "tanggal_kedaluwarsa": "date",
-            "total_waktu": "time",
-            "total_soal": "number",
-            "jenis": "string"
-        }
+           {
+                "benar": 1, //int
+                "salah": 1, //int
+                "kosong": 0, //int
+                "namaKelompokUjian": "Kemampuan Memahami Bacaan dan Menulis" //String
+            },
     ],
 
     "meta" : {
@@ -1748,7 +1796,6 @@ Response :
     }
 }
 ```
-
 ### List Buku Sakti - Lateks
 
 Request :
