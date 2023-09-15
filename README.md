@@ -1,5 +1,36 @@
 # API Spec
 
+## Carusol
+
+Request :
+- Method : GET
+- Endpoint : `/mobile/v1/carusol`
+- Header : null
+
+
+Response :
+
+```json 
+{
+    "data" : [
+        {
+          "nama_file":
+              "https://1.bp.blogspot.com/-lTJvQzNtTRw/XMTxH9UGFCI/AAAAAAAAPFQ/iVfu94tODOQ_AVuG1m-zN1Hl4NcipaCIACLcBGAs/s1600/event.png", //String
+          "keterangan": "Gambar Carousel 1", //String
+          "link": "https://www.example.com/carousel1", //String
+          "status": "aktif", //String
+          "tanggal": "2023-08-30" //String || date y-m-d
+        },
+    ],
+
+    "meta" : {
+        "code" : "number",
+        "message" : "string", 
+        "status" : "string",
+    }
+}
+```
+
 ## Auth
 
 ### Registrasi
