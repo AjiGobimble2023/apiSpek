@@ -17,6 +17,7 @@ Request :
     "nohp": "number",
     "noregistrasi" : "String",
     "role" : "string",
+    "imei": "String"
 }
 ```
 
@@ -127,7 +128,28 @@ Response :
     }
 }
 ```
+### Get Imei
 
+Request :
+- Method : POST
+- Endpoint : `/mobile/v1/auth/imei`
+- Header : null
+
+Response :
+
+```json 
+{
+    "data" : {
+           "imei":"d62b5b264fdc7baa" //String
+    },
+
+    "meta" : {
+        "code" : "number",
+        "message" : "string", 
+        "status" : "string",
+    }
+}
+```
 
 ## SEND Verfikasi dan Validasi
 
@@ -1810,19 +1832,20 @@ Response :
 {
     "data": [
         {
-            "id_bundel": "string, unique",
-            "kode_tob": "string, unique",
-            "kode_paket": "string, unique",
-            "deskripsi": "string",
-            "id_kelompok_ujian": "string, unique",
-            "nama_kelompok_ujian": "string",
-            "inisial": "string",
-            "waktu_pengerjaan": "time",
-            "total_soal": "number",
-            "opsi_urut": "string",
-            "id_sekolah_kelas": "string, unique",
-            "jenis": "string" //cnth: teaser
-        }
+                "c_IdBundel": "17374", //String
+                "c_KodeTOB": "14256", //String
+                "c_KodePaket": "LATEKS-372", //String
+                "c_Deskripsi": "12SMA-KM-S1-Fisika-TA. 23/24", //String
+                "c_IdKelompokUjian": "32", //String
+                "c_NamaKelompokUjian": "FISIKA", //String
+                "c_Singkatan": "FIS", //String
+                "c_WaktuPengerjaan": "1638", //String
+                "c_JumlahSoal": "819", //String
+                "c_OpsiUrut": "Bab", //String
+                "idSekolahKelas": "41", //String
+                "jenis": "reguler", //String
+                "iconMapel":"https://dltvxpypx9f25.cloudfront.net/mapel/tps_pemahaman_membaca_dan_menulis.webp" //String
+            },
     ],
 
     "meta" : {
@@ -1847,19 +1870,20 @@ Response :
 {
     "data": [
         {
-            "id_bundel": "string, unique",
-            "kode_tob": "string, unique",
-            "kode_paket": "string, unique",
-            "deskripsi": "string",
-            "id_kelompok_ujian": "string, unique",
-            "nama_kelompok_ujian": "string",
-            "inisial": "string",
-            "waktu_pengerjaan": "time",
-            "total_soal": "number",
-            "opsi_urut": "string",
-            "id_sekolah_kelas": "string, unique",
-            "jenis": "string" //cnth: teaser
-        }
+                "c_IdBundel": "17374", //String
+                "c_KodeTOB": "14256", //String
+                "c_KodePaket": "LATEKS-372", //String
+                "c_Deskripsi": "12SMA-KM-S1-Fisika-TA. 23/24", //String
+                "c_IdKelompokUjian": "32", //String
+                "c_NamaKelompokUjian": "FISIKA", //String
+                "c_Singkatan": "FIS", //String
+                "c_WaktuPengerjaan": "1638", //String
+                "c_JumlahSoal": "819", //String
+                "c_OpsiUrut": "Bab", //String
+                "idSekolahKelas": "41", //String
+                "jenis": "reguler", //String
+                "iconMapel":"https://dltvxpypx9f25.cloudfront.net/mapel/tps_pemahaman_membaca_dan_menulis.webp" //String
+            },
     ],
 
     "meta" : {
@@ -1883,20 +1907,21 @@ Response :
 ```json 
 {
     "data": [
-        {
-            "id_bundel": "string, unique",
-            "kode_tob": "string, unique",
-            "kode_paket": "string, unique",
-            "deskripsi": "string",
-            "id_kelompok_ujian": "string, unique",
-            "nama_kelompok_ujian": "string",
-            "inisial": "string",
-            "waktu_pengerjaan": "time",
-            "total_soal": "number",
-            "opsi_urut": "string",
-            "id_sekolah_kelas": "string, unique",
-            "jenis": "string" //cnth: teaser
-        }
+       {
+                "c_IdBundel": "17374", //String
+                "c_KodeTOB": "14256", //String
+                "c_KodePaket": "LATEKS-372", //String
+                "c_Deskripsi": "12SMA-KM-S1-Fisika-TA. 23/24", //String
+                "c_IdKelompokUjian": "32", //String
+                "c_NamaKelompokUjian": "FISIKA", //String
+                "c_Singkatan": "FIS", //String
+                "c_WaktuPengerjaan": "1638", //String
+                "c_JumlahSoal": "819", //String
+                "c_OpsiUrut": "Bab", //String
+                "idSekolahKelas": "41", //String
+                "jenis": "reguler", //String
+                "iconMapel":"https://dltvxpypx9f25.cloudfront.net/mapel/tps_pemahaman_membaca_dan_menulis.webp" //String
+            },
     ],
 
     "meta" : {
@@ -1920,20 +1945,21 @@ Response :
 ```json 
 {
     "data": [
-        {
-            "id_bundel": "string, unique",
-            "kode_tob": "string, unique",
-            "kode_paket": "string, unique",
-            "deskripsi": "string",
-            "id_kelompok_ujian": "string, unique",
-            "nama_kelompok_ujian": "string",
-            "inisial": "string",
-            "waktu_pengerjaan": "time",
-            "total_soal": "number",
-            "opsi_urut": "string",
-            "id_sekolah_kelas": "string, unique",
-            "jenis": "string" //cnth: teaser
-        }
+       {
+                "c_IdBundel": "17374", //String
+                "c_KodeTOB": "14256", //String
+                "c_KodePaket": "LATEKS-372", //String
+                "c_Deskripsi": "12SMA-KM-S1-Fisika-TA. 23/24", //String
+                "c_IdKelompokUjian": "32", //String
+                "c_NamaKelompokUjian": "FISIKA", //String
+                "c_Singkatan": "FIS", //String
+                "c_WaktuPengerjaan": "1638", //String
+                "c_JumlahSoal": "819", //String
+                "c_OpsiUrut": "Bab", //String
+                "idSekolahKelas": "41", //String
+                "jenis": "reguler", //String
+                "iconMapel":"https://dltvxpypx9f25.cloudfront.net/mapel/tps_pemahaman_membaca_dan_menulis.webp" //String
+            },
     ],
 
     "meta" : {
@@ -1958,27 +1984,30 @@ Response :
 {
     "data": [
         {
-            "kode_tob": "string, unique",
-            "id_kelompok_ujian": "string, unique",
-            "id_jenis_produk": "string, unique",
-            "id_sekolah_kelas": "string, unique",
-            "kode_paket": "string, unique",
-            "deskripsi": "string",
-            "nomor_urut": "number",
-            "isBlockingTime": "boolean",
-            "tanggal_berlaku": "date",
-            "tanggal_kadaluwarsa": "date",
-            "total_waktu": "time",
-            "total_soal": "number",
-            "jenis": "string",
-            "isSelesai": "boolean",
-            "isPernahMengerjakan": "boolean",
-            "tanggal_mulai": "date",
-            "tanggal_deadline": "date",
-            "tanggal_pengumpulan": "date",
-            "merk": "Unknown",
-            "waktu_habis": "boolean"
-        }
+                "kodeTOB": "18526", //String
+                "idKelompokUjian": "36", //String
+                "idJenisProduk": "80", //String
+                "idSekolahKelas": "41", //String
+                "kodePaket": "RAC-002051", //String
+                "c_Deskripsi": "RACING-12SMA-K.MERDEKA-02 SEPTEMBER 2023", //String
+                "nomorUrut": "1", //String
+                "isBlockingTime": "1", //String || bool
+                "tanggalBerlaku": "2023-09-02 10:00:00", //String || date
+                "tanggalKedaluwarsa": "2023-09-02 23:59:00", //String || date
+                "totalWaktu": "61", //String
+                "jumlahSoal": "40", //String
+                "jenis": "reguler", //String || enum
+                "isSelesai": "n", //String || bool
+                "isPernahMengerjakan": "n", //String || bool
+                "tanggalMulai": "-",//String || date
+                "tanggalDeadline": "-", //String || date
+                "tanggalMengumpulkan": "-", //String || date
+                "merk": "Unknown", //String
+                "waktuHabis": "n", //String || bool
+                "initial":"mkt", //String
+                "iconMapel":"https://dltvxpypx9f25.cloudfront.net/mapel/mapel_akm.webp", //String
+                "namaKelompokUjian":"MATEMATIKA SAINTEK" //String
+            },
     ],
 
     "meta" : {
@@ -2002,20 +2031,21 @@ Response :
 ```json 
 {
     "data": [
-        {
-            "id_bundel": "string, unique",
-            "kode_tob": "string, unique",
-            "kode_paket": "string, unique",
-            "deskripsi": "string",
-            "id_kelompok_ujian": "string, unique",
-            "nama_kelompok_ujian": "string",
-            "inisial": "string",
-            "waktu_pengerjaan": "time",
-            "total_soal": "number",
-            "opsi_urut": "string",
-            "id_sekolah_kelas": "string, unique",
-            "jenis": "string" //cnth: teaser
-        }
+       {
+                "c_IdBundel": "17374", //String
+                "c_KodeTOB": "14256", //String
+                "c_KodePaket": "LATEKS-372", //String
+                "c_Deskripsi": "12SMA-KM-S1-Fisika-TA. 23/24", //String
+                "c_IdKelompokUjian": "32", //String
+                "c_NamaKelompokUjian": "FISIKA", //String
+                "c_Singkatan": "FIS", //String
+                "c_WaktuPengerjaan": "1638", //String
+                "c_JumlahSoal": "819", //String
+                "c_OpsiUrut": "Bab", //String
+                "idSekolahKelas": "41", //String
+                "jenis": "reguler", //String
+                "iconMapel":"https://dltvxpypx9f25.cloudfront.net/mapel/tps_pemahaman_membaca_dan_menulis.webp" //String
+            },
     ],
 
     "meta" : {
@@ -2038,19 +2068,19 @@ Response :
 
 ```json 
 {
-    "data": [
-        {
-            "bab_utama": "string",
-            "info": [
-                {
-                    "nama_bab": "string",
-                    "jumlah_soal": "number",
-                    "kode_bab": "string, unique",
-                    "id_bundel": "string, unique",
-                }
-            ]
-        }
-    ],
+    "data":  [
+            {
+                "babUtama": "PARAGRAF", //String
+                "info": [
+                    {
+                        "c_NamaBab": "Informasi isi teks (tersurat/ tersirat)", //String
+                        "c_JumlahSoal": "1", //String
+                        "c_KodeBab": "06.01.31", //String
+                        "c_IdBundel": "18364" //String
+                    },
+                ]
+            }
+        ],
 
     "meta" : {
         "code" : "number",
@@ -2074,16 +2104,16 @@ Response :
 {
     "data": [
         {
-            "bab_utama": "string",
-            "info": [
-                {
-                    "nama_bab": "string",
-                    "jumlah_soal": "number",
-                    "kode_bab": "string, unique",
-                    "id_bundel": "string, unique",
-                }
-            ]
-        }
+                "babUtama": "PARAGRAF", //String
+                "info": [
+                    {
+                        "c_NamaBab": "Informasi isi teks (tersurat/ tersirat)", //String
+                        "c_JumlahSoal": "1", //String
+                        "c_KodeBab": "06.01.31", //String
+                        "c_IdBundel": "18364" //String
+                    },
+                ]
+            }
     ],
 
     "meta" : {
@@ -2108,16 +2138,16 @@ Response :
 {
     "data": [
         {
-            "bab_utama": "string",
-            "info": [
-                {
-                    "nama_bab": "string",
-                    "jumlah_soal": "number",
-                    "kode_bab": "string, unique",
-                    "id_bundel": "string, unique",
-                }
-            ]
-        }
+                "babUtama": "PARAGRAF", //String
+                "info": [
+                    {
+                        "c_NamaBab": "Informasi isi teks (tersurat/ tersirat)", //String
+                        "c_JumlahSoal": "1", //String
+                        "c_KodeBab": "06.01.31", //String
+                        "c_IdBundel": "18364" //String
+                    },
+                ]
+            }
     ],
 
     "meta" : {
@@ -2141,17 +2171,17 @@ Response :
 ```json 
 {
     "data": [
-        {
-            "bab_utama": "string",
-            "info": [
-                {
-                    "nama_bab": "string",
-                    "jumlah_soal": "number",
-                    "kode_bab": "string, unique",
-                    "id_bundel": "string, unique",
-                }
-            ]
-        }
+         {
+                "babUtama": "PARAGRAF", //String
+                "info": [
+                    {
+                        "c_NamaBab": "Informasi isi teks (tersurat/ tersirat)", //String
+                        "c_JumlahSoal": "1", //String
+                        "c_KodeBab": "06.01.31", //String
+                        "c_IdBundel": "18364" //String
+                    },
+                ]
+            }
     ],
 
     "meta" : {
@@ -2175,17 +2205,17 @@ Response :
 ```json 
 {
     "data": [
-        {
-            "bab_utama": "string",
-            "info": [
-                {
-                    "nama_bab": "string",
-                    "jumlah_soal": "number",
-                    "kode_bab": "string, unique",
-                    "id_bundel": "string, unique",
-                }
-            ]
-        }
+         {
+                "babUtama": "PARAGRAF", //String
+                "info": [
+                    {
+                        "c_NamaBab": "Informasi isi teks (tersurat/ tersirat)", //String
+                        "c_JumlahSoal": "1", //String
+                        "c_KodeBab": "06.01.31", //String
+                        "c_IdBundel": "18364" //String
+                    },
+                ]
+            }
     ],
 
     "meta" : {
@@ -2200,7 +2230,7 @@ Response :
 
 Request :
 - Method : GET
-- Endpoint : `/mobile/v1/buku-sakti/soal-emwa`
+- Endpoint : `/mobile/v1/buku-sakti/soal-emwa/{kodesoal}`
 - Header :
     - Accept: application/json
     - Authorization : "Bearer " + Token
@@ -2208,32 +2238,23 @@ Response :
 
 ```json 
 {
-    "data": {
-        "waktu": "time",
-        "data_detail": [
+    "data":  [
             {
-                "wacana": "",
-                "id_soal": "string, unique",
-                "nomor_soal": "1",
-                "id_wacana": "string, unique",
-                "id_bundel": "string, unique",
-                "id_kelompok_ujian": "string, unique",
-                "nama_kelompok_ujian": "string",
-                "id_video": "string, unique",
-                "soal": "string",
-                "opsi": [
-                    {
-                        "pilihan": "string, unique", // cnth:  A, B, C, D
-                        "text": "string",
-                        "isJawaban": "boolean",
-                    }
-                ],
-                "tipe_soal": "enum || string",
-                "tingkat_kesulitan": "number",
-                "kode_paket": "EMWA-754" //cnth: EMWA-754
-            }
-        ]
-    },
+                "wacana": "", //String
+                "c_IdSoal": "320407", //String
+                "c_NomorSoal": "1", //String
+                "c_IdWacana": "0", //String
+                "c_IdBundel": "23780", //String
+                "c_IdKelompokUjian": "124", //String
+                "c_IdVideo": "9829", //String
+                "c_Soal": "<p>Mahasiswa baru mencari perguruan tinggi swasta sebagai alternatif perguruan tinggi negeri. Jika kualitas dosen baik dan fasilitas perguruan tinggi swasta memadai, perguruan tinggi swasta tersebut baik. Mahasiswa baru akan memilih perguruan tinggi swasta dengan biaya murah.</p><p><img src=&quotes;{{root_media}}7689ae0111c790acc1b28b7f8287297f.png&quotes;></p><p>Ada berapa argumen yang memperlemah?</p>", //String || html
+                "c_Opsi": "{\"opsi\": {\"A\": {\"text\": \"<p>Tidak ada.</p>\", \"bobot\": 0}, \"B\": {\"text\": \"<p>Satu pernyataan.</p>\", \"bobot\": 100}, \"C\": {\"text\": \"<p>Dua pernyataan.</p>\", \"bobot\": 0}, \"D\": {\"text\": \"<p>Tiga pernyataan.</p>\", \"bobot\": 0}, \"E\": {\"text\": \"<p>Empat pernyataan.</p>\", \"bobot\": 0}}, \"nilai\": {\"fullcredit\": 1, \"halfcredit\": -1, \"zerocredit\": 0}}", //String
+                "c_TipeSoal": "PGB", //String || bool
+                "c_TingkatKesulitan": "4", //String
+                "c_NamaKelompokUjian": "KEMAMPUAN PENALARAN UMUM", //String
+                "c_KodePaket": "EMWA-754" //String
+            },
+        ],
 
     "meta" : {
         "code" : "number",
@@ -2247,7 +2268,7 @@ Response :
 
 Request :
 - Method : GET
-- Endpoint : `/mobile/v1/buku-sakti/soal-emma`
+- Endpoint : `/mobile/v1/buku-sakti/soal-emma/{kodesoal}`
 - Header :
     - Accept: application/json
     - Authorization : "Bearer " + Token
@@ -2255,32 +2276,23 @@ Response :
 
 ```json 
 {
-    "data": {
-        "waktu": "time",
-        "data_detail": [
-            {
-                "wacana": "",
-                "id_soal": "string, unique",
-                "nomor_soal": "1",
-                "id_wacana": "string, unique",
-                "id_bundel": "string, unique",
-                "id_kelompok_ujian": "string, unique",
-                "nama_kelompok_ujian": "string",
-                "id_video": "string, unique",
-                "soal": "string",
-                "opsi": [
-                    {
-                        "pilihan": "string, unique", // cnth:  A, B, C, D
-                        "text": "string",
-                        "isJawaban": "boolean",
-                    }
-                ],
-                "tipe_soal": "enum || string",
-                "tingkat_kesulitan": "number",
-                "kode_paket": "EMWA-754" //cnth: EMWA-754
-            }
-        ]
-    },
+    "data": [
+        {
+                "wacana": "", //String
+                "c_IdSoal": "320407", //String
+                "c_NomorSoal": "1", //String
+                "c_IdWacana": "0", //String
+                "c_IdBundel": "23780", //String
+                "c_IdKelompokUjian": "124", //String
+                "c_IdVideo": "9829", //String
+                "c_Soal": "<p>Mahasiswa baru mencari perguruan tinggi swasta sebagai alternatif perguruan tinggi negeri. Jika kualitas dosen baik dan fasilitas perguruan tinggi swasta memadai, perguruan tinggi swasta tersebut baik. Mahasiswa baru akan memilih perguruan tinggi swasta dengan biaya murah.</p><p><img src=&quotes;{{root_media}}7689ae0111c790acc1b28b7f8287297f.png&quotes;></p><p>Ada berapa argumen yang memperlemah?</p>", //String || html
+                "c_Opsi": "{\"opsi\": {\"A\": {\"text\": \"<p>Tidak ada.</p>\", \"bobot\": 0}, \"B\": {\"text\": \"<p>Satu pernyataan.</p>\", \"bobot\": 100}, \"C\": {\"text\": \"<p>Dua pernyataan.</p>\", \"bobot\": 0}, \"D\": {\"text\": \"<p>Tiga pernyataan.</p>\", \"bobot\": 0}, \"E\": {\"text\": \"<p>Empat pernyataan.</p>\", \"bobot\": 0}}, \"nilai\": {\"fullcredit\": 1, \"halfcredit\": -1, \"zerocredit\": 0}}", //String
+                "c_TipeSoal": "PGB", //String || bool
+                "c_TingkatKesulitan": "4", //String
+                "c_NamaKelompokUjian": "KEMAMPUAN PENALARAN UMUM", //String
+                "c_KodePaket": "EMWA-754" //String
+            },
+    ],
 
     "meta" : {
         "code" : "number",
@@ -2294,7 +2306,7 @@ Response :
 
 Request :
 - Method : GET
-- Endpoint : `/mobile/v1/buku-sakti/soal-lateks`
+- Endpoint : `/mobile/v1/buku-sakti/soal-lateks/{kodesoal}`
 - Header :
     - Accept: application/json
     - Authorization : "Bearer " + Token
@@ -2306,43 +2318,23 @@ Response :
 ```json 
 {
     "data": [
-        {
-            "waktu": "time",
-            "data_detail": [
-                {
-                    "id_bundel": "string, unique",
-                    "kode_bab": "string, unique",
-                    "id_soal": "string, unique",
-                    "id_kelompok_ujian": "string, unique",
-                    "nama_kelompok_ujian": "string",
-                    "soal": "string",
-                    "opsi": [
-                        {
-                            "opsi_detail": [
-                                {
-                                    "pilihan": "string, unique", // cnth:  A, B, C, D
-                                    "text": "string",
-                                    "isJawaban": "boolean",
-                                }
-                            ],
-                            "nilai": {
-                                "fullcredit": "number",
-                                "halfcredit": "number",
-                                "zerocredit": "number",
-                            }
-                        }
-                    ],
-                    "id_wacana": "string, unique",
-                    "tipe_soal": "string || enum",
-                    "tingkat_kesulitan": "number",
-                    "nomor_soal": "number",
-                    "id_video": null,
-                    "wacana": "string",
-                    "inisial_mapel": "string"
-                }
+         {
+                "c_IdBundel": "18364", //String
+                "c_KodeBab": "06.01.37", //String
+                "c_IdSoal": "170024", //String
+                "c_IdKelompokUjian": "119", //String
+                "c_NamaKelompokUjian": "Kemampuan Memahami Bacaan dan Menulis",
+                "c_Soal": "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1) Bahasa merupakan satu di antara hasil budaya manusia yang sangat tinggi nilainya. (2) Tidak dapat dibayangkan jika dalam seluruh kegiatan manusia tidak menggunakan bahasa. (3) Misalnya, ketika membeli sesuatu di toko, meminta atau memberikan informasi, menyatakan cinta atau memarahi seseorang, manusia memerlukan bahasa. (4) Tidak dapat dibayangkan bagaimana wujud tingkah laku manusia tanpa kehadiran bahasa untuk berinteraksi dengan sesamanya. (5) Bahasa menjadi sangat penting karena melalui bahasa manusia dapat berkembang. (6) Bagi manusia, bahasa menjadi media abstraksi berbagai gejala yang muncul di lingkungannya. (7) Hal tersebut menggambarkan betapa penting peran bahasa dalam kehidupan sosial manusia. (8) Komunikasi akan berjalan dengan lancar apabila bahasa yang digunakan tepat. (9) Artinya, bahasa itu dipergunakan sesuai dengan situasi dan kondisi penutur serta sifat penuturan itu dilaksanakan. (10) Hal <em>itu</em> sangat bergantung pada faktor-faktor penentu dalam tindak bahasa atau tindak komunikasi, yaitu lawan bicara, tujuan pembicaraan, masalah yang dibicarakan, atau situasi pembicaraan. (11) Pengguna bahasa yang sesuai dengan situasi dan kondisi peristiwa tindak bahasa disebut berbahasa secara pragmatik.<br></p><p><br></p><p>Apakah judul yang tepat untuk teks tersebut?<br></p>", //String || Html
+                "c_Opsi": "{\"opsi\": {\"A\": {\"text\": \"Pentingnya Penguasaan Bahasa bagi Manusia\", \"bobot\": 0}, \"B\": {\"text\": \"Peran Bahasa dalam Hubungan Sosial\", \"bobot\": 100}, \"C\": {\"text\": \"Pentingnya Kaidah Sosial dalam Berbahasa\", \"bobot\": 0}, \"D\": {\"text\": \"Faktor Penentu dalam Tindak Bahasa\", \"bobot\": 0}, \"E\": {\"text\": \"Media Abstraksi di Berbagai Lingkungan\", \"bobot\": 0}}, \"nilai\": {\"fullcredit\": 1, \"halfcredit\": -1, \"zerocredit\": 0}}", //String
+                "c_IdWacana": null, //String
+                "c_TipeSoal": "PGB", //String || ENUM
+                "c_TingkatKesulitan": "3",//String
+                "c_NomorSoal": "1", //String
+                "c_IdVideo": null, //String
+                "wacana": "", //String
+                "initial":"MTK" //String
+            }
             ],
-        }
-    ],
 
     "meta" : {
         "code" : "number",
@@ -2356,7 +2348,7 @@ Response :
 
 Request :
 - Method : GET
-- Endpoint : `/mobile/v1/buku-sakti/soal/soal-koding`
+- Endpoint : `/mobile/v1/buku-sakti/soal/soal-koding/{kodesoal}`
 - Header :
     - Accept: application/json
     - Authorization : "Bearer " + Token
@@ -2369,41 +2361,21 @@ Response :
 {
     "data": [
         {
-            "waktu": "time",
-            "data_detail": [
-                {
-                    "id_bundel": "string, unique",
-                    "kode_bab": "string, unique",
-                    "id_soal": "string, unique",
-                    "id_kelompok_ujian": "string, unique",
-                    "nama_kelompok_ujian": "string",
-                    "soal": "string",
-                    "opsi": [
-                        {
-                            "opsi_detail": [
-                                {
-                                    "pilihan": "string, unique", // cnth:  A, B, C, D
-                                    "text": "string",
-                                    "isJawaban": "boolean",
-                                }
-                            ],
-                            "nilai": {
-                                "fullcredit": "number",
-                                "halfcredit": "number",
-                                "zerocredit": "number",
-                            }
-                        }
-                    ],
-                    "id_wacana": "string, unique",
-                    "tipe_soal": "string || enum",
-                    "tingkat_kesulitan": "number",
-                    "nomor_soal": "number",
-                    "id_video": null,
-                    "wacana": "string",
-                    "inisial_mapel": "string"
-                }
-            ],
-        }
+                "c_IdBundel": "18364", //String
+                "c_KodeBab": "06.01.37", //String
+                "c_IdSoal": "170024", //String
+                "c_IdKelompokUjian": "119", //String
+                "c_NamaKelompokUjian": "Kemampuan Memahami Bacaan dan Menulis",
+                "c_Soal": "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1) Bahasa merupakan satu di antara hasil budaya manusia yang sangat tinggi nilainya. (2) Tidak dapat dibayangkan jika dalam seluruh kegiatan manusia tidak menggunakan bahasa. (3) Misalnya, ketika membeli sesuatu di toko, meminta atau memberikan informasi, menyatakan cinta atau memarahi seseorang, manusia memerlukan bahasa. (4) Tidak dapat dibayangkan bagaimana wujud tingkah laku manusia tanpa kehadiran bahasa untuk berinteraksi dengan sesamanya. (5) Bahasa menjadi sangat penting karena melalui bahasa manusia dapat berkembang. (6) Bagi manusia, bahasa menjadi media abstraksi berbagai gejala yang muncul di lingkungannya. (7) Hal tersebut menggambarkan betapa penting peran bahasa dalam kehidupan sosial manusia. (8) Komunikasi akan berjalan dengan lancar apabila bahasa yang digunakan tepat. (9) Artinya, bahasa itu dipergunakan sesuai dengan situasi dan kondisi penutur serta sifat penuturan itu dilaksanakan. (10) Hal <em>itu</em> sangat bergantung pada faktor-faktor penentu dalam tindak bahasa atau tindak komunikasi, yaitu lawan bicara, tujuan pembicaraan, masalah yang dibicarakan, atau situasi pembicaraan. (11) Pengguna bahasa yang sesuai dengan situasi dan kondisi peristiwa tindak bahasa disebut berbahasa secara pragmatik.<br></p><p><br></p><p>Apakah judul yang tepat untuk teks tersebut?<br></p>", //String || Html
+                "c_Opsi": "{\"opsi\": {\"A\": {\"text\": \"Pentingnya Penguasaan Bahasa bagi Manusia\", \"bobot\": 0}, \"B\": {\"text\": \"Peran Bahasa dalam Hubungan Sosial\", \"bobot\": 100}, \"C\": {\"text\": \"Pentingnya Kaidah Sosial dalam Berbahasa\", \"bobot\": 0}, \"D\": {\"text\": \"Faktor Penentu dalam Tindak Bahasa\", \"bobot\": 0}, \"E\": {\"text\": \"Media Abstraksi di Berbagai Lingkungan\", \"bobot\": 0}}, \"nilai\": {\"fullcredit\": 1, \"halfcredit\": -1, \"zerocredit\": 0}}", //String
+                "c_IdWacana": null, //String
+                "c_TipeSoal": "PGB", //String || ENUM
+                "c_TingkatKesulitan": "3",//String
+                "c_NomorSoal": "1", //String
+                "c_IdVideo": null, //String
+                "wacana": "", //String
+                "initial":"MTK" //String
+            }
     ],
 
     "meta" : {
@@ -2431,41 +2403,21 @@ Response :
 {
     "data": [
         {
-            "waktu": "time",
-            "data_detail": [
-                {
-                    "id_bundel": "string, unique",
-                    "kode_bab": "string, unique",
-                    "id_soal": "string, unique",
-                    "id_kelompok_ujian": "string, unique",
-                    "nama_kelompok_ujian": "string",
-                    "soal": "string",
-                    "opsi": [
-                        {
-                            "opsi_detail": [
-                                {
-                                    "pilihan": "string, unique", // cnth:  A, B, C, D
-                                    "text": "string",
-                                    "isJawaban": "boolean",
-                                }
-                            ],
-                            "nilai": {
-                                "fullcredit": "number",
-                                "halfcredit": "number",
-                                "zerocredit": "number",
-                            }
-                        }
-                    ],
-                    "id_wacana": "string, unique",
-                    "tipe_soal": "string || enum",
-                    "tingkat_kesulitan": "number",
-                    "nomor_soal": "number",
-                    "id_video": null,
-                    "wacana": "string",
-                    "inisial_mapel": "string"
-                }
-            ],
-        }
+                "c_IdBundel": "18364", //String
+                "c_KodeBab": "06.01.37", //String
+                "c_IdSoal": "170024", //String
+                "c_IdKelompokUjian": "119", //String
+                "c_NamaKelompokUjian": "Kemampuan Memahami Bacaan dan Menulis",
+                "c_Soal": "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1) Bahasa merupakan satu di antara hasil budaya manusia yang sangat tinggi nilainya. (2) Tidak dapat dibayangkan jika dalam seluruh kegiatan manusia tidak menggunakan bahasa. (3) Misalnya, ketika membeli sesuatu di toko, meminta atau memberikan informasi, menyatakan cinta atau memarahi seseorang, manusia memerlukan bahasa. (4) Tidak dapat dibayangkan bagaimana wujud tingkah laku manusia tanpa kehadiran bahasa untuk berinteraksi dengan sesamanya. (5) Bahasa menjadi sangat penting karena melalui bahasa manusia dapat berkembang. (6) Bagi manusia, bahasa menjadi media abstraksi berbagai gejala yang muncul di lingkungannya. (7) Hal tersebut menggambarkan betapa penting peran bahasa dalam kehidupan sosial manusia. (8) Komunikasi akan berjalan dengan lancar apabila bahasa yang digunakan tepat. (9) Artinya, bahasa itu dipergunakan sesuai dengan situasi dan kondisi penutur serta sifat penuturan itu dilaksanakan. (10) Hal <em>itu</em> sangat bergantung pada faktor-faktor penentu dalam tindak bahasa atau tindak komunikasi, yaitu lawan bicara, tujuan pembicaraan, masalah yang dibicarakan, atau situasi pembicaraan. (11) Pengguna bahasa yang sesuai dengan situasi dan kondisi peristiwa tindak bahasa disebut berbahasa secara pragmatik.<br></p><p><br></p><p>Apakah judul yang tepat untuk teks tersebut?<br></p>", //String || Html
+                "c_Opsi": "{\"opsi\": {\"A\": {\"text\": \"Pentingnya Penguasaan Bahasa bagi Manusia\", \"bobot\": 0}, \"B\": {\"text\": \"Peran Bahasa dalam Hubungan Sosial\", \"bobot\": 100}, \"C\": {\"text\": \"Pentingnya Kaidah Sosial dalam Berbahasa\", \"bobot\": 0}, \"D\": {\"text\": \"Faktor Penentu dalam Tindak Bahasa\", \"bobot\": 0}, \"E\": {\"text\": \"Media Abstraksi di Berbagai Lingkungan\", \"bobot\": 0}}, \"nilai\": {\"fullcredit\": 1, \"halfcredit\": -1, \"zerocredit\": 0}}", //String
+                "c_IdWacana": null, //String
+                "c_TipeSoal": "PGB", //String || ENUM
+                "c_TingkatKesulitan": "3",//String
+                "c_NomorSoal": "1", //String
+                "c_IdVideo": null, //String
+                "wacana": "", //String
+                "initial":"MTK" //String
+            }
     ],
 
     "meta" : {
@@ -2480,7 +2432,7 @@ Response :
 
 Request :
 - Method : GET
-- Endpoint : `/mobile/v1/buku-sakti/soal/soal-referensi`
+- Endpoint : `/mobile/v1/buku-sakti/soal/soal-referensi/{kodesoal}`
 - Header :
     - Accept: application/json
     - Authorization : "Bearer " + Token
@@ -2493,41 +2445,21 @@ Response :
 {
     "data": [
         {
-            "waktu": "time",
-            "data_detail": [
-                {
-                    "id_bundel": "string, unique",
-                    "kode_bab": "string, unique",
-                    "id_soal": "string, unique",
-                    "id_kelompok_ujian": "string, unique",
-                    "nama_kelompok_ujian": "string",
-                    "soal": "string",
-                    "opsi": [
-                        {
-                            "opsi_detail": [
-                                {
-                                    "pilihan": "string, unique", // cnth:  A, B, C, D
-                                    "text": "string",
-                                    "isJawaban": "boolean",
-                                }
-                            ],
-                            "nilai": {
-                                "fullcredit": "number",
-                                "halfcredit": "number",
-                                "zerocredit": "number",
-                            }
-                        }
-                    ],
-                    "id_wacana": "string, unique",
-                    "tipe_soal": "string || enum",
-                    "tingkat_kesulitan": "number",
-                    "nomor_soal": "number",
-                    "id_video": null,
-                    "wacana": "string",
-                    "inisial_mapel": "string"
-                }
-            ],
-        }
+                "c_IdBundel": "18364", //String
+                "c_KodeBab": "06.01.37", //String
+                "c_IdSoal": "170024", //String
+                "c_IdKelompokUjian": "119", //String
+                "c_NamaKelompokUjian": "Kemampuan Memahami Bacaan dan Menulis",
+                "c_Soal": "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1) Bahasa merupakan satu di antara hasil budaya manusia yang sangat tinggi nilainya. (2) Tidak dapat dibayangkan jika dalam seluruh kegiatan manusia tidak menggunakan bahasa. (3) Misalnya, ketika membeli sesuatu di toko, meminta atau memberikan informasi, menyatakan cinta atau memarahi seseorang, manusia memerlukan bahasa. (4) Tidak dapat dibayangkan bagaimana wujud tingkah laku manusia tanpa kehadiran bahasa untuk berinteraksi dengan sesamanya. (5) Bahasa menjadi sangat penting karena melalui bahasa manusia dapat berkembang. (6) Bagi manusia, bahasa menjadi media abstraksi berbagai gejala yang muncul di lingkungannya. (7) Hal tersebut menggambarkan betapa penting peran bahasa dalam kehidupan sosial manusia. (8) Komunikasi akan berjalan dengan lancar apabila bahasa yang digunakan tepat. (9) Artinya, bahasa itu dipergunakan sesuai dengan situasi dan kondisi penutur serta sifat penuturan itu dilaksanakan. (10) Hal <em>itu</em> sangat bergantung pada faktor-faktor penentu dalam tindak bahasa atau tindak komunikasi, yaitu lawan bicara, tujuan pembicaraan, masalah yang dibicarakan, atau situasi pembicaraan. (11) Pengguna bahasa yang sesuai dengan situasi dan kondisi peristiwa tindak bahasa disebut berbahasa secara pragmatik.<br></p><p><br></p><p>Apakah judul yang tepat untuk teks tersebut?<br></p>", //String || Html
+                "c_Opsi": "{\"opsi\": {\"A\": {\"text\": \"Pentingnya Penguasaan Bahasa bagi Manusia\", \"bobot\": 0}, \"B\": {\"text\": \"Peran Bahasa dalam Hubungan Sosial\", \"bobot\": 100}, \"C\": {\"text\": \"Pentingnya Kaidah Sosial dalam Berbahasa\", \"bobot\": 0}, \"D\": {\"text\": \"Faktor Penentu dalam Tindak Bahasa\", \"bobot\": 0}, \"E\": {\"text\": \"Media Abstraksi di Berbagai Lingkungan\", \"bobot\": 0}}, \"nilai\": {\"fullcredit\": 1, \"halfcredit\": -1, \"zerocredit\": 0}}", //String
+                "c_IdWacana": null, //String
+                "c_TipeSoal": "PGB", //String || ENUM
+                "c_TingkatKesulitan": "3",//String
+                "c_NomorSoal": "1", //String
+                "c_IdVideo": null, //String
+                "wacana": "", //String
+                "initial":"MTK" //String
+            }
     ],
 
     "meta" : {
@@ -2542,7 +2474,7 @@ Response :
 
 Request :
 - Method : GET
-- Endpoint : `/mobile/v1/buku-sakti/soal-kuis`
+- Endpoint : `/mobile/v1/buku-sakti/soal-kuis/{kodesoal}`
 - Header :
     - Accept: application/json
     - Authorization : "Bearer " + Token
@@ -2550,31 +2482,24 @@ Response :
 
 ```json 
 {
-    "data" : {
-        {
-            "id_soal": "string, unique",
-            "soal": "string",
-            "opsi": [
-                {
-                    "pilihan": "string, unique", // cnth:  A, B, C, D
-                    "text": "string",
-                    "isJawaban": "boolean",
-                }
-            ],
-            "id_wacana": "string, unique",
-            "id_tipe_soal": "string, unique",
-            "tipe_soal": "string",
-            "tingkat_kesulitan": "number",
-            "wacana": "string",
-            "nama_kelompok_ujian": "string",
-            "kode_paket": "string, unique",
-            "id_bundel": "string, unique",
-            "id_kelompok_ujian": "string, unique",
-            "id_video": "string, unique",
-            "nomor_soal": "number"
-        },
-        "waktu": "time",
-    },
+    "data" : [
+         {
+                "c_idsoal": "335213", //String
+                "c_soal": "<p class=&quotes;so&quotes;><span lang=&quotes;EN-US&quotes;>Sebuah industri rumah tangga yang baru beroperasi tahun 2012 membeli mesin produksi seharga Rp100.000.000,-. Dengan berjalannya proses produksi, maka harga mesin menurun 1% setiap tahun. Harga mesin pada tahun 2014 adalah</span></p>",  //String
+                "c_opsi": "{\"opsi\": {\"A\": {\"text\": \"<p>Rp98.000.000,-</p>\", \"bobot\": 0}, \"B\": {\"text\": \"<p>Rp98.010.000,-</p>\", \"bobot\": 100}, \"C\": {\"text\": \"<p class=&quotes;2&quotes;><span lang=&quotes;EN-US&quotes;>Rp98.020.000,-</span></p>\", \"bobot\": 0}, \"D\": {\"text\": \"<p class=&quotes;2&quotes;><span lang=&quotes;EN-US&quotes;>Rp98.030.000,-</span></p>\", \"bobot\": 0}, \"E\": {\"text\": \"<p class=&quotes;2&quotes;><span lang=&quotes;EN-US&quotes;>Rp98.050.000,-</span></p>\", \"bobot\": 0}}, \"nilai\": {\"fullcredit\": 1, \"halfcredit\": -1, \"zerocredit\": 0}}", //object
+                "c_idwacana": "0", //String
+                "c_tipesoal": "PGB", //String || enum 
+                "c_tingkatkesulitan": "3", //String || int
+                "c_nomorsoal": "1", //String || int
+                "wacana": "", //String
+                "c_namakelompokujian": "MATEMATIKA UMUM", //String
+                "c_kodepaket": "RAC-002051", //String
+                "c_idbundel": "24606", //String
+                "c_idkelompokujian": "111", //String
+                "c_idvideo": "0", //String
+                "c_NomorSoal": "1" //String
+            },
+    ],
 
     "meta" : {
         "code" : "number",
@@ -2600,42 +2525,22 @@ Response :
 ```json 
 {
     "data": [
-        {
-            "waktu": "time",
-            "data_detail": [
-                {
-                    "id_bundel": "string, unique",
-                    "kode_bab": "string, unique",
-                    "id_soal": "string, unique",
-                    "id_kelompok_ujian": "string, unique",
-                    "nama_kelompok_ujian": "string",
-                    "soal": "string",
-                    "opsi": [
-                        {
-                            "opsi_detail": [
-                                {
-                                    "pilihan": "string, unique", // cnth:  A, B, C, D
-                                    "text": "string",
-                                    "isJawaban": "boolean",
-                                }
-                            ],
-                            "nilai": {
-                                "fullcredit": "number",
-                                "halfcredit": "number",
-                                "zerocredit": "number",
-                            }
-                        }
-                    ],
-                    "id_wacana": "string, unique",
-                    "tipe_soal": "string || enum",
-                    "tingkat_kesulitan": "number",
-                    "nomor_soal": "number",
-                    "id_video": null,
-                    "wacana": "string",
-                    "inisial_mapel": "string"
-                }
-            ],
-        }
+         {
+                "c_IdBundel": "18364", //String
+                "c_KodeBab": "06.01.37", //String
+                "c_IdSoal": "170024", //String
+                "c_IdKelompokUjian": "119", //String
+                "c_NamaKelompokUjian": "Kemampuan Memahami Bacaan dan Menulis",
+                "c_Soal": "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1) Bahasa merupakan satu di antara hasil budaya manusia yang sangat tinggi nilainya. (2) Tidak dapat dibayangkan jika dalam seluruh kegiatan manusia tidak menggunakan bahasa. (3) Misalnya, ketika membeli sesuatu di toko, meminta atau memberikan informasi, menyatakan cinta atau memarahi seseorang, manusia memerlukan bahasa. (4) Tidak dapat dibayangkan bagaimana wujud tingkah laku manusia tanpa kehadiran bahasa untuk berinteraksi dengan sesamanya. (5) Bahasa menjadi sangat penting karena melalui bahasa manusia dapat berkembang. (6) Bagi manusia, bahasa menjadi media abstraksi berbagai gejala yang muncul di lingkungannya. (7) Hal tersebut menggambarkan betapa penting peran bahasa dalam kehidupan sosial manusia. (8) Komunikasi akan berjalan dengan lancar apabila bahasa yang digunakan tepat. (9) Artinya, bahasa itu dipergunakan sesuai dengan situasi dan kondisi penutur serta sifat penuturan itu dilaksanakan. (10) Hal <em>itu</em> sangat bergantung pada faktor-faktor penentu dalam tindak bahasa atau tindak komunikasi, yaitu lawan bicara, tujuan pembicaraan, masalah yang dibicarakan, atau situasi pembicaraan. (11) Pengguna bahasa yang sesuai dengan situasi dan kondisi peristiwa tindak bahasa disebut berbahasa secara pragmatik.<br></p><p><br></p><p>Apakah judul yang tepat untuk teks tersebut?<br></p>", //String || Html
+                "c_Opsi": "{\"opsi\": {\"A\": {\"text\": \"Pentingnya Penguasaan Bahasa bagi Manusia\", \"bobot\": 0}, \"B\": {\"text\": \"Peran Bahasa dalam Hubungan Sosial\", \"bobot\": 100}, \"C\": {\"text\": \"Pentingnya Kaidah Sosial dalam Berbahasa\", \"bobot\": 0}, \"D\": {\"text\": \"Faktor Penentu dalam Tindak Bahasa\", \"bobot\": 0}, \"E\": {\"text\": \"Media Abstraksi di Berbagai Lingkungan\", \"bobot\": 0}}, \"nilai\": {\"fullcredit\": 1, \"halfcredit\": -1, \"zerocredit\": 0}}", //String
+                "c_IdWacana": null, //String
+                "c_TipeSoal": "PGB", //String || ENUM
+                "c_TingkatKesulitan": "3",//String
+                "c_NomorSoal": "1", //String
+                "c_IdVideo": null, //String
+                "wacana": "", //String
+                "initial":"MTK" //String
+            }
     ],
 
     "meta" : {
@@ -2664,15 +2569,22 @@ Response :
 {
     "data": [
         {
-            "kode_tob": "string, unique",
-            "tob": "string",
-            "isSelected": "boolean",
-            "isFix": "boolean",
-            "detail_nilai": {
-                "nama_subtes":  "string",
-                "nilai_score": "number",
-            }
-        }
+                "kodeTob": "819", //String
+                "tob": "TOBK 13 IPA_UAT JAN_17940", //String
+                "isSelected": false, //bool
+                "isFix": false, //bool
+                "detailNilai": {
+                    "TPS - PENGETAHUAN DAN PEMAHAMAN UMUM": "800", //String
+                    "Kemampuan Memahami Bacaan dan Menulis": "850", //String
+                    "PENALARAN MATEMATIKA": "700", //String
+                    "LITERASI DALAM BAHASA INDONESIA": "100", //String
+                    "LITERASI DALAM BAHASA INGGRIS": "850", //String
+                    "PENGETAHUAN KUANTITATIF": "700", //String
+                    "KPU_PENALARAN DEDUKTIF": "635", //String
+                    "KPU_PENALARAN INDUKTIF": "650", //String
+                    "KPU_PENALARAN KUANTITATIF": "820" //String
+                }
+            },
     ],
 
     "meta" : {
@@ -2696,22 +2608,22 @@ Response :
 ```json 
 {
     "data": [
-        {
-            "prioritas": "number",
-            "status": "boolean",
-            "universitas": "string",
-            "id_jurusan": "string, unique",
-            "nama_jurusan": "string",
-            "passing_grade": "number",
-            "peminat": {
-                "total": "number",
-                "tahun": "string"
+         {
+                "prioritas": "1", //String
+                "status": "1", //String
+                "ptn": "INSTITUT TEKNOLOGI KALIMANTAN", //String
+                "jurusanId": "5421124", //String
+                "jurusan": "INFORMATIKA", //String
+                "pg": "552.99", //String
+                "peminat": {
+                    "jml": 292, //int
+                    "tahun": 2021 //int
+                },
+                "tampung": {
+                    "jml": 60, //int
+                    "tahun": 2022 //int
+                }
             },
-            "tampung": {
-                "total": "number",
-                "tahun": "string"
-            }
-        }
     ],
 
     "meta" : {
@@ -2736,24 +2648,23 @@ Response :
 {
     "data": [
         {
-            "prioritas": "number",
-            "status": "boolean",
-            "universitas": "string",
-            "id_jurusan": "string, unique",
-            "nama_jurusan": "string",
-            "rumpun": "string || null",
-            "passing_grade": "number",
-            "peminat": {
-                "total": "number",
-                "tahun": "string"
+                "prioritas": "1", //String
+                "ptn": "Belum ada data",//String
+                "jurusanId": null, //String
+                "jurusan": "Belum ada data", //String
+                "rumpun": null, //String
+                "pg": "0", //String
+                "peminat": {
+                    "jml": 0, //int
+                    "tahun": 2021 //int
+                },
+                "tampung": {
+                    "jml": 0, //int
+                    "tahun": 2022 //int
+                },
+                "total": "0", //String
+                "saran": null // //String
             },
-            "tampung": {
-                "total": "number",
-                "tahun": "string"
-            },
-            "total": "number",
-            "saran": "string || null"
-        }
     ],
 
     "meta" : {
@@ -2771,7 +2682,7 @@ Response :
 
 Request :
 - Method : GET
-- Endpoint : `/mobile/v1/simulasi/`
+- Endpoint : `/mobile/v1/bookmark/`
 - Header :
     - Accept: application/json
     - Authorization : "Bearer " + Token
@@ -2781,29 +2692,30 @@ Response :
 {
     "data": [
         {
-            "icon_mapel": "string",
-            "list_bookmark": [
-                {
-                    "id_soal": "string, unique",
-                    "isPaket": "boolean",
-                    "kode_bab": "string, unique",
-                    "kode_tob": "string, unique",
-                    "nama_bab": "string",
-                    "id_bundel": "string, unique",
-                    "isSimpan": "boolean",
-                    "kode_paket": "string, unique",
-                    "nomor_soal": "number",
-                    "last_update": "date",
-                    "id_jenis_produk": "number",
-                    "nomor_soal_siswa": "number",
-                    "nama_jenis_produk": "string",
-                    "tanggal_kadaluwarsa": "date || null"
+                    "iconMapel": "https://firebasestorage.googleapis.com/v0/b/kreasi-f1f7b.appspot.com/o/icon%2Fmapel%2Fmapel_indo.webp?alt=media&token=c2641f9f-b8f0-42c9-90e7-488a759aaf78", //String
+                    "listBookmark": [
+                        {
+                            "idSoal": "278136", //String
+                            "isPaket": false, //bool
+                            "kodeBab": "06.02.05", //String
+                            "kodeTOB": "574", //String
+                            "namaBab": "Tanda Baca", //String
+                            "idBundel": "2015", //String
+                            "isSimpan": true, //bool
+                            "kodePaket": "LATEKS-118", //String
+                            "nomorSoal": 37, //int
+                            "lastUpdate": "2023-02-16 09:07:54", //String || date
+                            "idJenisProduk": 76, //int
+                            "nomorSoalSiswa": 1, //int
+                            "namaJenisProduk": "e-Latihan Extra", //String
+                            "tanggalKedaluwarsa": null //String || date
+                        },
+                       
+                    ],
+                    "idKelompokUjian": "109", //String
+                    "namaKelompokUjian": "LITERASI DALAM BAHASA INDONESIA", //String
+                    "initial":"PK" //String
                 },
-            ],
-            "id_kelompok_ujian": "string, unique",
-            "nama_kelompok_ujian": "string",
-            "inisial_kelompok_ujian": "string"
-        }
     ],
 
     "meta" : {
@@ -2821,7 +2733,7 @@ Response :
 
 Request :
 - Method : GET
-- Endpoint : `/mobile/v1/simulasi/`
+- Endpoint : `/mobile/v1/Payment/`
 - Header :
     - Accept: application/json
     - Authorization : "Bearer " + Token
@@ -2829,15 +2741,15 @@ Response :
 
 ```json 
 {
-    "data": [
-        {
-            "id_pembelian": "string, unique",
-            "total_harga": "number",
-            "total_dibayar": "number",
-            "sisa_bayar": "number",
-            "status": "enum",
-        }
-    ],
+    "data": 
+       {
+            "id": "070917008001", //String
+            "total": "7498000", //String
+            "current": "7498000", //String
+            "remainin": "0", //String
+            "status": "Lunas", //String
+            "message": "Jika tidak sesuai silahkan hubungi 0853 5199 1159 (WA)" //String
+        },
 
     "meta" : {
         "code" : "number",
@@ -2862,13 +2774,13 @@ Response :
 {
     "data": [
         {
-            "id_pembelian": "string, unique",
-            "total_harga": "number",
-            "total_dibayar": "number",
-            "sisa_bayar": "number",
-            "status": "enum",
-            "tanggal_jatuhtempo": "Date"
-        }
+                "c_idpembelian": "1793357", //String
+                "total": "7498000", //String
+                "current": "7498000", //String
+                "remaining": "0", //String
+                "status": "LUNAS", //String
+                "c_jatuhtempo": null //String
+            }
     ],
 
     "meta" : {
